@@ -14,6 +14,7 @@ body{
     background: $background-color;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    overflow-x: hideen;
 }
 #logo{
     color: white;
@@ -55,6 +56,7 @@ body{
     position: relative;
     flex: 1;
     flex-basis: 25rem;
+    overflow: hidden;
     img{
         width: 100%;
         height: 100%;
@@ -147,5 +149,5 @@ body{
     border: 2px solid white;
     border-radius: 50%;
     position: absolute;
-    
+
 }
