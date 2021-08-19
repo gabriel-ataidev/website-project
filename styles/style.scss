@@ -200,3 +200,62 @@ body{
 body.hide{
     overflow: hidden;
 }
+
+// other pages
+.fashion1, .fashion2, .fashion3{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    color: white;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+.fashion-img{
+    height: 70vh;
+    flex-basis: 30rem;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.fashion-text{
+    flex: 1;
+    position: relative;
+    flex-basis: 25rem;
+    h1{
+        font-size: 6rem;
+        padding: 5rem 0;
+    }
+    p{
+        font-size: 2rem;
+        padding: 2rem 2rem 0 0;
+        margin-bottom: 10rem;
+    }
+}
+.fashion1{
+    h1{
+        color: $swipe-colorm;
+    }
+}
+.fashion2{
+    h1{
+        color: $swipe-colorh;
+    }
+}
+.fashion3{
+    h1{
+        color: $swipe-colorf;
+    }
+}
+.fashion-nr{
+    font-size: 15rem;
+    position: absolute;
+    right: -5%;
+    bottom: 10%;
+    color: rgba(90, 90, 90, 0.589);
+}
