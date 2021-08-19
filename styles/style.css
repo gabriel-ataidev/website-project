@@ -66,15 +66,6 @@ body {
   background: #17181a;
 }
 
-.hero-container {
-  position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  -ms-flex-preferred-size: 25rem;
-      flex-basis: 25rem;
-}
-
 .hero-img {
   position: relative;
   -webkit-box-flex: 1;
@@ -115,10 +106,38 @@ body {
   position: relative;
 }
 
-.hero-desc h2 {
+.hero-desc .title {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-desc .title h2 {
   font-family: 'Abril Fatface', sans-serif;
   font-weight: 400;
   font-size: 4rem;
+}
+
+.hero-desc .title .title-swipe {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  mix-blend-mode: darken;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.hero-desc .title .t-swipe1 {
+  background: #567ce4;
+}
+
+.hero-desc .title .t-swipe2 {
+  background: #a76ee7;
+}
+
+.hero-desc .title .t-swipe3 {
+  background: #ff8b5d;
 }
 
 .hero-desc p {
@@ -214,6 +233,36 @@ body {
   border: 2px solid white;
   border-radius: 50%;
   position: absolute;
+  -webkit-transform: translate(-40%, -30%);
+          transform: translate(-40%, -30%);
+  pointer-events: none;
+  -webkit-transition: background-color, -webkit-transform 0.5s ease-in-out;
+  transition: background-color, -webkit-transform 0.5s ease-in-out;
+  transition: background-color, transform 0.5s ease-in-out;
+  transition: background-color, transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform-origin: 65% 65%;
+          transform-origin: 65% 65%;
+}
+
+.cursor.nav-active {
+  background: #a76ee7;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+.cursor.explore-active {
+  background: white;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+}
+
+.cursor .cursor-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 0.5rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .scrollmagic-pin-spacer {
