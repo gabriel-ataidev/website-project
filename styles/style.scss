@@ -14,7 +14,7 @@ body{
     background: $background-color;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    overflow-x: hideen;
+    overflow-x: hidden;
 }
 #logo{
     color: white;
@@ -138,10 +138,11 @@ body{
 .reveal-img, .reveal-text{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 200%;
     background: $background-color;
     left: 0;
-    top: 0;
+    top: -20%;
+    z-index: 30;
 }
 .cursor{
     width: 3rem;
@@ -149,5 +150,7 @@ body{
     border: 2px solid white;
     border-radius: 50%;
     position: absolute;
-
+}
+.scrollmagic-pin-spacer{
+    position: static !important;
 }
