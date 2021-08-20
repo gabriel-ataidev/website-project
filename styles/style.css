@@ -231,7 +231,7 @@ main {
   background: #17181a;
   left: 0;
   top: -20%;
-  z-index: 30;
+  z-index: 2;
 }
 
 .cursor {
@@ -351,5 +351,30 @@ body.hide {
   right: -5%;
   bottom: 10%;
   color: rgba(90, 90, 90, 0.589);
+}
+
+.swipe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.swipe1 {
+  background: #567ce4;
+  z-index: 5;
+}
+
+.swipe2 {
+  background: #a76ee7;
+  z-index: 4;
+}
+
+.swipe3 {
+  background: #ff8b5d;
+  z-index: 3;
 }
 /*# sourceMappingURL=style.css.map */

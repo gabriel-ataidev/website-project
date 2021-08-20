@@ -170,7 +170,7 @@ main{
     background: $background-color;
     left: 0;
     top: -20%;
-    z-index: 30;
+    z-index: 2;
 }
 .cursor{
     width: 3rem;
@@ -263,4 +263,24 @@ body.hide{
     right: -5%;
     bottom: 10%;
     color: rgba(90, 90, 90, 0.589);
+}
+.swipe{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);    
+}
+.swipe1{
+    background: $swipe-colorm;
+    z-index: 5;
+}
+.swipe2{
+    background: $swipe-colorh;
+    z-index: 4;
+}
+.swipe3{
+    background: $swipe-colorf;
+    z-index: 3;
 }
