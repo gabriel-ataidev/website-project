@@ -15,6 +15,10 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
+    position: relative;
+}
+main{
+    position: absolute;
 }
 #logo{
     color: white;
@@ -201,6 +205,7 @@ body.hide{
     overflow: hidden;
 }
 
+///////////////////////////////
 // other pages
 .fashion1, .fashion2, .fashion3{
     min-height: 90vh;
